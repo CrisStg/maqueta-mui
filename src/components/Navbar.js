@@ -11,7 +11,7 @@ const Navbar = ({ links }) => {
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     console.log(isMatch);
     return (
-        <AppBar sx={{ backgroundColor: '#000' }}>
+        <AppBar sx={{ backgroundColor: '#000', color:'#fff' }}>
             <Toolbar>
                 {isMatch ? (
                     <>
@@ -22,8 +22,8 @@ const Navbar = ({ links }) => {
                         <Grid item xs={2}>
                             <Typography variant="h6">Logo</Typography>
                         </Grid>
-                        <Grid item xs={5}></Grid>
-                        <Grid item xs={5}>
+                        <Grid item xs={4}></Grid>
+                        <Grid item xs={6}>
                             <Tabs
                                 indicatorColor='secondary'
                                 textColor='inherit'
