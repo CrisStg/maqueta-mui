@@ -60,7 +60,7 @@ const Form = () => {
             noValidate
             autoComplete="off"
         >
-            <Typography sx={{textAlign:'center', fontSize:'2rem'}}>Escríbenos</Typography>
+            <Typography sx={{ textAlign: 'center', fontSize: '2rem' }}>Escríbenos</Typography>
 
             <Grid container spacing={3} sx={{ display: 'flex', alignItems: 'center', justifyItems: 'center', alignContent: 'center' }}>
                 <Grid item xs={12}>
@@ -68,6 +68,7 @@ const Form = () => {
                         required
                         id="outlined-required"
                         label="Nombre"
+                        sx={{ width: '100%' }}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -75,6 +76,7 @@ const Form = () => {
                         required
                         id="outlined-required"
                         label="E-mail"
+                        sx={{ width: '100%' }}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -82,8 +84,16 @@ const Form = () => {
                         required
                         id="outlined-required"
                         label="Mensaje"
+                        sx={{ width: '100%' }}
                         multiline
                     />
+                </Grid>
+                <Grid item xs={12}>
+                    <Button
+                        variant="outlined"
+                        sx={{ width: '100%' }}>
+                        Enviar
+                    </Button>
                 </Grid>
             </Grid>
         </Box>

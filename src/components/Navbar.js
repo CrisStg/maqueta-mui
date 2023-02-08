@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { AppBar, Grid, Toolbar, Typography, Box, Button, useTheme, useMediaQuery } from '@mui/material'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -10,15 +10,18 @@ const Navbar = ({ links }) => {
     console.log(theme);
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     console.log(isMatch);
+
+    
+
     return (
-        <AppBar sx={{ backgroundColor: '#000', color:'#fff' }}>
+        <AppBar sx={{ backgroundColor: '#000', color:'#fff'}}>
             <Toolbar>
                 {isMatch ? (
                     <>
                         <DrawerComp links={links} />
                     </>
                 ) : (
-                    <Grid sx={{ placeItems: 'center' }} container>
+                    <Grid sx={{ placeItems: 'center'}} container>
                         <Grid item xs={2}>
                             <Typography variant="h6">Logo</Typography>
                         </Grid>
@@ -31,7 +34,7 @@ const Navbar = ({ links }) => {
                                 onChange={(e, val) => setValue(val)}>
 
                                 {links.map((link, index) => (
-                                    <Tab key={index} label={link} />))}
+                                    <Tab key={index} label={link} href={`#${link}`}   />))}
                             </Tabs>
                         </Grid>
                         

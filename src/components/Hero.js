@@ -1,37 +1,29 @@
 import React from 'react'
 import { Box, Typography, Button } from '@mui/material'
-import { alpha } from "@mui/material";
+import styles from './hero.module.css'
 
 
 const hero = () => {
   return (
     
-    <Box
-        sx={{ 
-        height: '90vh',
-        display: 'flex', 
-        flexDirection: 'column', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        backgroundImage: 'url(https://www.marvinn.com/wp-content/uploads/2022/06/Slide_01-2-1.png)', 
-        backgroundRepeat: 'no-repeat', 
-        backgroundSize: 'cover',
-        backgroundPositionY: 'center',
-        backgroundColor: alpha(color.black, 0.5)
-      }}
-      
-      
-    
-    >
-      <Typography variant="h3" color="primary" marginRight="auto" marginLeft={"5vw"} >
+    <Box id="Inicio" className={styles.hero}>
+      <Typography variant="h3" color="primary" marginRight="auto" marginLeft={"5vw"} marginTop={"6vh"} lineHeight={"1.5em"} >
         Alcance sus metas financieras
         <br/>
         Con nuestra experiencia
         <br/>
         Y enfoque perzonlizado
       </Typography>
-      <Button  variant="outlined" sx={{marginRight:"auto", marginLeft:"5vw"}}>
-        Learn More
+      <Button  variant="outlined" sx={{
+        marginRight:"auto", 
+        marginLeft:"5vw", 
+        marginTop:"2em", 
+        borderRadius:"0",
+        height:"4em",
+        width:"16em",
+        
+        }}>
+        Mas información
       </Button>
     </Box>
     

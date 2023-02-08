@@ -1,0 +1,13 @@
+.Link, ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: grey;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 1ex;
+}
+
+.Link:hover{
+    color: #fff;
+}

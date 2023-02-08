@@ -4,7 +4,7 @@ import Form from './Form'
 
 const Contact = () => {
   return (
-    <Grid container>
+    <Grid id="Contacto"container>
         <Grid xs={12} >
             <Typography sx={{textAlign:"center" , fontSize:"3rem", paddingBlock:"1em"}}>Contáctanos</Typography>
         </Grid>

@@ -1,11 +1,13 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@mui/material'
 import { Container } from '@mui/system'
+import { Link } from '@mui/material'
+import './Footer.css'
 
 const Footer = () => {
   return (
     
-    <Box sx={{backgroundColor:'#000', minHeight:'22.05em', color:'#fff', alignItems:'center', display:'flex'}}>
+    <Box  sx={{backgroundColor:'#000', minHeight:'22.05em', color:'#fff', alignItems:'center', display:'flex'}}>
       <Container>
       <Grid container>
         <Grid item xs={12} md={6}>
@@ -17,10 +19,10 @@ const Footer = () => {
             listStyle:'none',
             marginTop:'2rem'}}>Menú
             <ul>
-              <li>Home</li>
-              <li>Productos</li>
-              <li>Blog</li>
-              <li>Contacto</li>
+              <li><Link className='Link' href='#Inicio'>Home</Link></li>
+              <li><Link className='Link' href='#Quienes Somos'>Quienes Somos</Link></li>
+              <li><Link className='Link' href='#Nuestros Servicios'>Nuestros Servicios</Link></li>
+              <li><Link className='Link' href='#Contacto'>Contacto</Link></li>
             </ul>
           </Typography>
         </Grid>
@@ -33,7 +35,7 @@ const Footer = () => {
             listStyle:'none',
             marginTop:'2rem'}}>Dirección
             <ul >
-              <li>Home</li>
+              <li>Av ejemplo #333</li>
             </ul>
           </Typography>
           <Typography sx={{
@@ -44,7 +46,7 @@ const Footer = () => {
             listStyle:'none',
             marginTop:'2rem'}}>Teléfono
             <ul >
-              <li>Home</li>
+              <li>+56 2 222 222</li>
             </ul>
           </Typography>
         </Grid>
