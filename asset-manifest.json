@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/maqueta-mui/static/css/main.6dd89539.css",
+    "main.js": "/maqueta-mui/static/js/main.5a7ba720.js",
+    "static/media/img1.svg": "/maqueta-mui/static/media/img1.9e84e4d70c10df992f8febf066a42fbc.svg",
+    "static/media/img2.svg": "/maqueta-mui/static/media/img2.a4788f3c48e0b12f36a46e77dd606aaf.svg",
+    "static/media/img3.svg": "/maqueta-mui/static/media/img3.b99345646bd38f80821212712768b4e3.svg",
+    "static/media/img4.svg": "/maqueta-mui/static/media/img4.3feb99cc5b5d3169d456c03abe395433.svg",
+    "index.html": "/maqueta-mui/index.html",
+    "main.6dd89539.css.map": "/maqueta-mui/static/css/main.6dd89539.css.map",
+    "main.5a7ba720.js.map": "/maqueta-mui/static/js/main.5a7ba720.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6dd89539.css",
+    "static/js/main.5a7ba720.js"
+  ]
+}
