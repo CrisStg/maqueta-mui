@@ -11,9 +11,7 @@ const Navbar = ({ links }) => {
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     console.log(isMatch);
 
-    {/**
-    como comparar el valor del scroll con el valor de los id de las secciones para que el tab se active
-*/}
+   
     useEffect(() => {
         const handleScroll = () => {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop
