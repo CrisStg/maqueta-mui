@@ -44,7 +44,7 @@ const FlipCards = () => {
     return (
         <Grid container justifyContent={'center'} flexDirection={'row'}>
             {cards.map((card) => (
-        <Grid item md={3}>
+        <Grid item md={3} xs={12}>
 
                 <FlipCard 
                 key={card.id} 

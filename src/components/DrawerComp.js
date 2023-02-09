@@ -11,7 +11,7 @@ const DrawerComp = ({ links }) => {
             }} anchor='right' open={open} onClose={() => setOpen(false)} >
                 <List>
                     {links.map((link, index) => (
-                        <ListItemButton onClick={() => setOpen(false)}>
+                        <ListItemButton  onClick={() => setOpen(false)} href={`#${link}`}>
                             <ListItemIcon>
                                 <ListItemText sx={{ color: '#fff' }}>
                                     {link}

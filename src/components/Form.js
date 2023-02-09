@@ -43,7 +43,18 @@ const StyledTextField = styled(TextField)({
 
 
 
+
 const Form = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        console.log({
+            name: data.get('name'),
+            email: data.get('email'),
+            message: data.get('message'),
+        });
+    };
+
     return (
         <Box
             sx=
@@ -59,6 +70,7 @@ const Form = () => {
             component="form"
             noValidate
             autoComplete="off"
+            onSubmit={handleSubmit}
         >
             <Typography sx={{ textAlign: 'center', fontSize: '2rem' }}>Escríbenos</Typography>
 
@@ -66,30 +78,35 @@ const Form = () => {
                 <Grid item xs={12}>
                     <StyledTextField
                         required
-                        id="outlined-required"
+                        id="name"
                         label="Nombre"
                         sx={{ width: '100%' }}
+                        name="name"
                     />
                 </Grid>
                 <Grid item xs={12}>
                     <StyledTextField
                         required
-                        id="outlined-required"
+                        id="email"
                         label="E-mail"
                         sx={{ width: '100%' }}
+                        name="email"
                     />
                 </Grid>
                 <Grid item xs={12}>
                     <StyledTextField
                         required
-                        id="outlined-required"
+                        id="message"
                         label="Mensaje"
                         sx={{ width: '100%' }}
                         multiline
+                        name='message'
+                        rows={3}
                     />
                 </Grid>
                 <Grid item xs={12}>
                     <Button
+                        type="submit"
                         variant="outlined"
                         sx={{ width: '100%' }}>
                         Enviar
